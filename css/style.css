@@ -66,22 +66,37 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
     grid-template-columns: repeat(4, 1fr);
   margin: 0 auto;
   width: 80%;
-  grid-gap:5%;
-  padding-bottom: 5%;
-  
+  padding-bottom: 3%;
+  grid-gap:2.5%;
   justify-content: center;
 }
 .tarjeta
 {
+  max-width: 100%;
+  margin: 0 auto;
+  background-color: whitesmoke; 
   display: grid;
-  justify-items: center;
-  text-align: center;
+  box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15) !important;
+ box-sizing: border-box;
+  border: 2px solid transparent
 }
+
+.tarjeta:hover
+{
+  transition: .2s all;
+    box-shadow: 0 .5rem 1rem rgba(255, 153, 19, 0.493) !important;
+}
+
+.tarjeta h5
+{
+  color: #E47A2E !important
+}
+
 .img-banners
 {
-  width: 100% ;
+  width: 100%;
   height: 15rem;
-  border-radius: 25px;
+  margin: 0 auto;
 }
 
 body {
@@ -343,11 +358,75 @@ legend {
   color: inherit;
   white-space: normal;
 }
+@media (max-width: 1600px) {
+.sec-tarjeta {
+    grid-gap: 3.5%;
+    width: 90%;
+    
+  }
+    .nosotros {
+      max-width: 90%;
+      margin: 0 auto;
+  
+    }
+}
 
-@media (max-width: 1200px) {
+@media (max-width: 1300px) {
+    .sec-tarjeta {
+  grid-template-columns: repeat(2, 1fr);
+    }
+        .contenido {
+          padding-top: 8%;
+        }
+}
+
+
+@media (max-width: 700px) {
   legend {
     font-size: calc(1.275rem + 0.3vw) ;
   }
+
+    .nosotros {
+      max-width:100%;
+      margin: 0 auto;
+  
+    }
+  
+    .sec-tarjeta {
+      display: grid;
+      justify-content: center;
+      grid-template-columns: repeat(1, 1fr);
+      margin: 0 auto;
+      width: 90%;
+      padding-bottom: 2%;
+      grid-gap: 2.5%;
+      justify-content: center;
+      box-sizing: border-box;
+    }
+  
+    .tarjeta {
+      max-width: 100%;
+      margin: 0 auto;
+      background-color: whitesmoke;
+      display: grid;
+      box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15) !important;
+      box-sizing: border-box;
+    }
+  
+    .tarjeta h5 {
+      color: #E47A2E !important
+    }
+  
+    .img-banners {
+      width: 100%;
+      height: 15rem;
+      margin: 0 auto;
+    }
+
+    .contenido
+    {
+      padding-top: 35%;
+    }
 }
 
 progress {
