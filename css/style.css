@@ -80,7 +80,17 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
  box-sizing: border-box;
   border: 2px solid transparent
 }
+.card-tt
+{
+  border-radius: 15px;
+  border-top: 3px solid #E47A2E; 
 
+}
+
+#testimonios
+{
+  padding: 2% 0% 7% 0%;
+}
 .tarjeta:hover
 {
   transition: .2s all;
@@ -382,6 +392,10 @@ legend {
 
 
 @media (max-width: 700px) {
+  #testimonios {
+      padding: 4% 0% 27% 0%;
+    }
+
   legend {
     font-size: calc(1.275rem + 0.3vw) ;
   }
