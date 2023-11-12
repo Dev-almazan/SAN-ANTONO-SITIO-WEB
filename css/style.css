@@ -9853,7 +9853,11 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 .bg-gallery {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/galeria/fondo.jpg), no-repeat center center;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/galeria/cinco.jpg) no-repeat center center;
+  background-size: cover;
+}
+.bg-galleryb {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/galeria/carousel-1.jpg) no-repeat center center;
   background-size: cover;
 }
 
@@ -9881,6 +9885,58 @@ a.text-dark:hover, a.text-dark:focus {
   font-size: 30px;
 }
 
+
+.card.map-card .living-coral {
+  background-color:#E47A2E !important;
+}
+
+.card.map-card .living-coral-text {
+  color:#E47A2E !important;
+}
+
+
+.card.map-card .pt-3-5 {
+  padding-top: 1.25rem;
+}
+
+.card.map-card .card-body {
+  position: initial;
+  width: 100%;
+  height: auto;
+  top: 20%;
+  overflow: hidden;
+  background-color: transparent;
+  -webkit-transition: all 1s;
+  -o-transition: all 1s;
+  transition: all 1s;
+  -webkit-border-radius: 0 !important;
+  border-radius: 0 !important;
+}
+
+.card.map-card .card-body.closed {
+  top: 100%;
+  height: auto;
+  margin-top: -.5rem;
+}
+
+.card.map-card .map-container {
+  overflow: hidden;
+  padding-bottom: 46.25%;
+  position: relative;
+  height: 0;
+}
+
+.card.map-card .map-container iframe {
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+
+.card.map-card .button .btn-floating {
+  margin-top: -1.5rem;
+}
 @media (max-width: 767.98px) {
   #event .border-right {
     border-right: none !important;
